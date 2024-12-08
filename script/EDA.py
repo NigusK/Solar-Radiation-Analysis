@@ -198,7 +198,7 @@ class EDA:
             plt.legend()
             plt.show()
 
-    def plot_monthly_mean(df1, df2, df3):
+    def plot_monthly_mean(self,df1, df2, df3):
         # Resample each DataFrame to daily means
         df1.index = pd.to_datetime(df1['Timestamp'])
         df2.index = pd.to_datetime(df2['Timestamp'])
